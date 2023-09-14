@@ -1,6 +1,6 @@
 what Is The Simple Shell?
 
-This is a simple implementation of command-line interpreter for the Unix operating system created by Alx students  and .
+This is a simple implementation of command-line interpreter for the Unix operating system created by Alx students Ahmed Ali  and Omnia Eldeeb.
 
 Usage
 
