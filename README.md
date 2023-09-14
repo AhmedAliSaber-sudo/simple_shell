@@ -8,7 +8,7 @@ In order to run this program,
 
 Clone This Repo
 
-git clone ...................
+git clone https://github.com/AhmedAliSaber-sudo/simple_shell.git
 
 compile it with
 
