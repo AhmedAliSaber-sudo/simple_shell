@@ -10,7 +10,7 @@ int str_array_length(char **array)
 {
     int length = 0;
 
-    while (array[length] != NULL)
+    while (array[length])
     {
         length++;
     }
