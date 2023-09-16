@@ -7,22 +7,9 @@
  * Return: 0 on success.
 */
 
-int main(int ac, char **av)
+int main()
 {
-    
-    char *line;
-    char **cmds;
-
-    (void) ac, (void)av;
-
-    print_prompt();
-    line = get_line();
-    cmds = parse_line(line);
-    print_string_array(cmds);
-
-    free(line);
-    free_double_ptr(cmds, str_array_length(cmds));
+    run();
 
     return (0);
-
 }

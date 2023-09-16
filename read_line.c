@@ -14,12 +14,12 @@ char *get_line()
     characters = getline(&line, &bufsize, stdin);
 
     if (characters == -1) {
-        if (feof(stdin)) {
-            // End of file reached
+        if (feof(stdin))
+        {
             printf("\n");
-        } else {
-            // Error occurred
-            perror("getline");
+        } else
+        {
+            perror("error in getline");
         }
         free(line);
         return NULL;
