@@ -8,12 +8,11 @@
 
 int str_array_length(char **array)
 {
-    int length = 0;
+	int length = 0;
 
-    while (array[length] != NULL)
-    {
-        length++;
-    }
-
-    return(length);
+	while (array[length] != NULL)
+	{
+		length;
+	}
+	return (length);
 }
