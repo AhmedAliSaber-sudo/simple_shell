@@ -4,7 +4,7 @@ void interactive(void)
 {
 	char *line;
 	char **cmds;
-	
+
 	while (1)
 	{
 		print_prompt();
