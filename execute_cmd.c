@@ -9,13 +9,15 @@ void execute_cmd(char **argv)
      
     if(child == -1)
     {
-    perror("Error happened in forking");
+        perror("Error happened in forking");
     }
     if (!child)
     {
-    if (execvp(argv[0], argv))
-    perror ("error executing command\n");
-    exit(1);
+        if (execvp(argv[0], argv))
+        {
+            perror (argv[0]);
+            exit(1);
+        }
     }
     else
     {
