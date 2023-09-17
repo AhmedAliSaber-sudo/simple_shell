@@ -13,15 +13,7 @@ char *get_line()
 
 	characters = getline(&line, &bufsize, stdin);
 
-<<<<<<< HEAD
-	if (characters == -1)
-	{
-		
-		if (feof(stdin))
-		{	
-		    printf("\n");
-	    }else
-=======
+
     if (characters == -1) {
         if (feof(stdin))
         {
@@ -36,15 +28,8 @@ char *get_line()
         }
         
     }
->>>>>>> 540d1b2661d14b067b9659c9febfd4bf806761ed
 
-	    {
-		    perror("error in getline");
-	    }
-	    free(line)
-		    
-	 return (NULL);
-	}
+	   
 	return (line);
 }
 
