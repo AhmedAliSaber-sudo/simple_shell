@@ -7,6 +7,6 @@
 void print_prompt(void)
 {
 	char *prompt = "$ ";
-
-	write(1, prompt, strlen(prompt));
+	if (isatty(STDIN_FILENO) == 1)
+		write(1, prompt, strlen(prompt));
 }
