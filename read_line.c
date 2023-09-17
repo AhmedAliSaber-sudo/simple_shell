@@ -7,24 +7,27 @@
 
 char *get_line()
 {
-    char *line = NULL;
-    size_t bufsize = 0;
-    ssize_t characters;
+	char *line = NULL;
+	size_t bufsize = 0;
+	size_t characters;
 
-    characters = getline(&line, &bufsize, stdin);
+	characters = getline(&line, &bufsize, stdin);
 
-    if (characters == -1) {
-        if (feof(stdin))
-        {
-            printf("\n");
-        } else
-        {
-            perror("error in getline");
-        }
-        free(line);
-        return NULL;
-    }
+	if (characters == -1)
+	{
+		
+		if (feof(stdin))
+		{	
+		    printf("\n");
+	    }else
 
-    return line;
+	    {
+		    perror("error in getline");
+	    }
+	    free(line)
+		    
+	 return (NULL);
+	}
+	return (line);
 }
 
