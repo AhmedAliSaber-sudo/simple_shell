@@ -12,7 +12,7 @@ void interactive(void)
         line = get_line();
         cmds = parse_line(line);
         execute_cmd(cmds);
-        putchar('\n');
+        write(1, "\n", 1);
 
         free(line);
         free_double_ptr(cmds, str_array_length(cmds));
