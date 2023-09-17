@@ -14,4 +14,4 @@ void non_interactive(void)
 		free(line);
 		free_double_ptr(cmds, str_array_length(cmds));
 	}
-55555555555555555}
+}
