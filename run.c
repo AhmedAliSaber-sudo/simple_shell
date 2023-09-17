@@ -1,20 +1,17 @@
 #include "shell.h"
 
-void run()
+void run(int argc, char **argv)
 {
-    
+    (void) argc;
+    (void) argv;
 
-    while (1)
+    if (isatty(STDIN_FILENO) == 1)
     {
-    char *line;
-    char **cmds;
-    print_prompt();
-    line = get_line();
-    cmds = parse_line(line);
-    execute_cmd(cmds);
-    putchar('\n');
-
-    free(line);
-    free_double_ptr(cmds, str_array_length(cmds));
+        interactive();
     }
+    else
+    {
+        non_interactive();
+    }
+  
 }
