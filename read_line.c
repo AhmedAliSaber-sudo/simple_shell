@@ -14,22 +14,20 @@ char *get_line()
 	characters = getline(&line, &bufsize, stdin);
 
 
-    if (characters == -1) {
-        if (feof(stdin))
-        {
-            free(line);
-            exit(EXIT_SUCCESS);
-        }
-        else
-        {
-            free(line);
-            perror("error while get line");
-            exit(EXIT_FAILURE);
-        }
-        
-    }
-
-	   
+	if (characters == -1)
+	{
+		if (feof(stdin))
+		{
+			free(line);
+			exit(EXIT_SUCCESS);
+		}
+		else
+		{
+			free(line);
+			perror("error while get line");
+			exit(EXIT_FAILURE);
+		}
+	}
 	return (line);
 }
 
