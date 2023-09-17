@@ -16,13 +16,16 @@ char *get_line()
     if (characters == -1) {
         if (feof(stdin))
         {
-            printf("\n");
-        } else
-        {
-            perror("error in getline");
+            free(line);
+            exit(EXIT_SUCCESS);
         }
-        free(line);
-        return NULL;
+        else
+        {
+            free(line);
+            perror("error while get line");
+            exit(EXIT_FAILURE);
+        }
+        
     }
 
     return line;
