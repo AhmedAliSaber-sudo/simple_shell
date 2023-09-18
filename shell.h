@@ -1,6 +1,7 @@
 #ifndef SHELL_H
 #define SHELL_H
 
+/***  libraries ***/
 #include <string.h>
 #include <stdlib.h>
 #include <stdio.h>
@@ -17,6 +18,8 @@ void free_double_ptr(char **arr, size_t size);
 void *safe_malloc(size_t size);
 void print_string_array(char **arr);
 void execute_cmd(char **argv);
-void run(void);
+void interactive(void);
+void non_interactive(void);
+void run(int argc, char **argv);
 
 #endif
