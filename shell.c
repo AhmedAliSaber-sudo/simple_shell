@@ -4,12 +4,12 @@
  * main - the entr point of the simple shell.
  * @argc: the number of arguments passed to the shell.
  * @argv: an array of pointers to the arguments.
- * Return: 0 on success.
+ * Return: Always 0.
 */
 
-int main()
+int main(int argc, char **argv)
 {
-    run();
+    run(argc, argv);
 
     return (0);
 }
