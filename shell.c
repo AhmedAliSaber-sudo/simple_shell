@@ -1,12 +1,15 @@
 #include "shell.h"
 
 /**
- * main - the entr point of the simple shell.
- * Return: 0 on success.
+ * main - the entry point of the simple shell.
+ * @argc: the number of arguments passed to the shell.
+ * @argv: an array of pointers to the arguments.
+ * Return: Always 0.
 */
 
-int main(void)
+int main(int argc, char **argv)
 {
-	run();
-	return (0);
+    run(argc, argv);
+
+    return (0);
 }
