@@ -19,7 +19,7 @@ void execute_cmd(char **argv)
 	{
 		if (execvp(argv[0], argv))
 		{
-			fprintf(stderr, "./hsh: %d: %s: not found\n", 1, argv[0]);
+			perror(argv[0]);
 			_exit(127);
 		}
 	}
