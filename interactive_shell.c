@@ -1,5 +1,9 @@
 #include "shell.h"
 
+/**
+* interactive - runs the shell in interactive mode.
+*/
+
 void interactive(void)
 {
 	char *line;
