@@ -30,6 +30,8 @@ exit
 ``
 ## Environment
 
+Our shell was built and tested on Ubuntu 14.04 LTS.
+
 This is a simple shell written in C. It is easy to use and understand, and it can be used to perform a variety of tasks.
 
 Authors: Ahmed Ali and Omnia Saged.
