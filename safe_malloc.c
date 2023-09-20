@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
-* safe_malloc - allocate memory and retuen error if failed.
+* safe_malloc - allocate memory and return error if failed.
 * @size: the size of the memory to be allocated.
 * Return: the pointer to the allocated memory.
 */
@@ -13,6 +13,7 @@ void *safe_malloc(size_t size)
 
 	if (ptr == NULL)
 	{
+		free(ptr);
 		write(1, message, strlen(message));
 		exit(EXIT_FAILURE);
 	}

@@ -10,7 +10,7 @@
 #include <sys/wait.h>
 #include <sys/stat.h>
 
- /* extern char **environment; */
+/*extern char **environment;*/
 
 /*** Functions prototypes ***/
 void print_prompt(void);

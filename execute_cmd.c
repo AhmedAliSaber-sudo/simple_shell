@@ -3,6 +3,7 @@
 /**
 * execute_cmd - executes commands.
 * @argv: array of arguments.
+* @env: environment.
 */
 
 void execute_cmd(char **argv)
@@ -17,7 +18,7 @@ void execute_cmd(char **argv)
 	}
 	if (!child)
 	{
-		if (execvp(argv[0], argv))
+		if (execve(argv[0], argv, NULL))
 		{
 			perror("./hsh");
 			exit(EXIT_FAILURE);
