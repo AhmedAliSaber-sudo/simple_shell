@@ -9,7 +9,7 @@
 */
 int set_env_var(char *variable, char *value)
 {
-	if (setenv(variable, value, 1) != 0)
+	if (setenv(variable, value, 1))
 	{
 		fprintf(stderr, "Failed to set environment variable\n");
 		return (-1);
@@ -26,7 +26,7 @@ int set_env_var(char *variable, char *value)
 
 int unset_env_var(char *variable)
 {
-	if (unsetenv(variable) != 0)
+	if (unsetenv(variable))
 	{
 		fprintf(stderr, "Failed to unset environment variable\n");
 		return (-1);
