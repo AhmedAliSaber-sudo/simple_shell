@@ -1,42 +1,34 @@
-what Is The Simple Shell?
+# Simple shell
 
-This is a simple implementation of command-line interpreter for the Unix operating system created by Alx students Ahmed Ali  and Omnia Eldeeb.
+This is a simple shell written in C. It supports the following commands:
 
-Usage
+* `cd` - Change directory
+* `ls` - List files
+* `pwd` - Print working directory
+* `exit` - Exit the shell
 
-In order to run this program,
+To use the shell, simply run the `./hsh` file. You will then be presented with a prompt where you can enter commands.
 
-Clone This Repo
+## Code snippets
 
-git clone https://github.com/AhmedAliSaber-sudo/simple_shell.git
+The following code snippets show how to use the shell:
 
-compile it with
+```
+# Change directory to the home directory
+cd ~
 
-gcc 4.8.4 -Wall -Werror -Wextra -pedantic *.c -o hsh.
-You can then run it by invoking ./hsh in that same directory.
+# List files in the current directory
+ls
 
-How to use it
-In order to use this shell, in a terminal, first run the program:
-prompt$ ./hsh
-It wil then display a simple prompt and wait for commands.
-$ 
-A command will be of the type $ command
-This shell can handle two types of commands: builtins and normal program.
+# Print working directory
+pwd
 
-List of built-ins
-Currently the list of built-ins I wrote is:
+# Exit the shell
+exit
+```
 
-cd [directory]
-Switch to the specified directory (path).
-env
-Displays the environment variable
-exit [exitstatus]
-Exit from the program with exitstatus value. 0 by default.
-getenv NAME
-Return the value of the NAME variable if it is in the environment
-help [command]
-Displays the syntax for the command, or all commands.
-history
-Displays the last typed user .
-echo [$$] or [$?] or [$PATH] Return pid and exit statue and PATH.
+## Conclusion
 
+This is a simple shell written in C. It is easy to use and understand, and it can be used to perform a variety of tasks.
+
+Authors: Ahmed Ali and Omnia Saged.
