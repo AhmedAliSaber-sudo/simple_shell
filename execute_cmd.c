@@ -19,7 +19,7 @@ void execute_cmd(char **argv)
 	{
 		if (execvp(argv[0], argv))
 		{
-			perror(argv[0]);
+			perror("./hsh");
 			_exit(127);
 		}
 	}
