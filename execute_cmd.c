@@ -1,5 +1,10 @@
 #include "shell.h"
 
+/**
+* execute_cmd - executes commands.
+* @argv: array of arguments.
+*/
+
 void execute_cmd(char **argv)
 {
 	pid_t child;
@@ -14,8 +19,8 @@ void execute_cmd(char **argv)
 	{
 		if (execvp(argv[0], argv))
 		{
-			perror(argv[0]);
-			exit(1);
+			fprintf(stderr, "./hsh: %d: %s: not found\n", 1, argv[0]);
+			_exit(127);
 		}
 	}
 	else
