@@ -34,6 +34,15 @@ Our shell was built and tested on Ubuntu 14.04 LTS.
 
 ## Basic usage
 
+First, Fork this Repository Learn how to fork repo.
+Then Clone Learn how to clone .
+Create an executable by running the following command:
+gcc -Wall -Werror -Wextra -pedantic *.c -o hsh
+From there, type in the following command and press your enter button.
+./hsh
+Final step: ENJOY!
+
+
 This is a simple shell written in C. It is easy to use and understand, and it can be used to perform a variety of tasks.
 
 Authors: Ahmed Ali and Omnia Saged.
