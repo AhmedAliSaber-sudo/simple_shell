@@ -7,7 +7,8 @@ This is a simple shell written in C. It supports the following commands:
 * `pwd` - Print working directory
 * `exit` - Exit the shell
 
-To use the shell, simply run the `./hsh` file. You will then be presented with a prompt where you can enter commands.
+To use the shell, simply run the `./hsh` file. 
+You will then be presented with a prompt where you can enter commands.
 
 ## Code snippets
 
