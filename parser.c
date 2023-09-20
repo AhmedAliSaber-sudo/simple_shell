@@ -8,15 +8,14 @@
 
 char **parse_line(char *line)
 {
-    const char *delim = " \n";
-    char *line_copy = NULL;
-    char *token;
-    char **tokens;
+	const char *delim = " \n";
+	char *line_copy = NULL;
+	char *token;
+	char **tokens;
 	int tokens_numbers = 0;
 	int i;
 
 	line_copy = safe_malloc(sizeof(char *) * strlen(line));
-	
 	strcpy(line_copy, line);
 	token = strtok(line_copy, delim);
 
@@ -26,9 +25,7 @@ char **parse_line(char *line)
 		token = strtok(NULL, delim);
 	}
 	tokens_numbers++;
-
 	tokens = safe_malloc(sizeof(char *) * tokens_numbers);
-    
 	token = strtok(line, delim);
 	for (i = 0; token != NULL; i++)
 	{

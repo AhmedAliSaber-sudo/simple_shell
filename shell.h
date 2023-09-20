@@ -1,15 +1,17 @@
 #ifndef SHELL_H
 #define SHELL_H
 
+/***  libraries ***/
 #include <string.h>
 #include <stdlib.h>
 #include <stdio.h>
 #include <unistd.h>
 #include <sys/types.h>
 #include <sys/wait.h>
+#include <sys/stat.h>
 
 /*** Functions Declarations ***/
-void print_prompt();
+void print_prompt(void);
 char *get_line();
 char **parse_line(char *line);
 int str_array_length(char **array);
