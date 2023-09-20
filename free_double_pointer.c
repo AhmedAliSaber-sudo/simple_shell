@@ -17,4 +17,3 @@ void free_double_ptr(char **arr, size_t size)
 
 	free(arr);
 }
-

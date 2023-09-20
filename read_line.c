@@ -13,7 +13,6 @@ char *get_line()
 
 	characters = getline(&line, &bufsize, stdin);
 
-
 	if (characters == -1)
 	{
 		if (feof(stdin))

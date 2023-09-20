@@ -21,9 +21,8 @@ void free_double_ptr(char **arr, size_t size);
 void *safe_malloc(size_t size);
 void print_string_array(char **arr);
 void execute_cmd(char **argv);
-char *find_command(const char *command);
-void run(int argc, char **argv);
 void interactive(void);
 void non_interactive(void);
+void run(int argc, char **argv);
 
 #endif

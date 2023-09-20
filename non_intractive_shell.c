@@ -1,5 +1,9 @@
 #include "shell.h"
 
+/**
+* non_interactive - runs the shell in non-interactive mode.
+*/
+
 void non_interactive(void)
 {
 	char *line;
