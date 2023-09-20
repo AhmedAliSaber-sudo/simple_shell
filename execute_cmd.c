@@ -20,7 +20,7 @@ void execute_cmd(char **argv)
 		if (execvp(argv[0], argv))
 		{
 			perror("./hsh");
-			_exit(127);
+			exit(EXIT_FAILURE);
 		}
 	}
 	else
