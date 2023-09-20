@@ -1,9 +1,9 @@
 #include "shell.h"
 
 /**
- * parse_line - parse the line entered
+ * parse_line - parse the entered line.
  * @line: the user input.
- * Return: return array of strings.
+ * Return: return an array of strings.
 */
 
 char **parse_line(char *line)
@@ -16,6 +16,7 @@ char **parse_line(char *line)
 	int i;
 
 	line_copy = safe_malloc(sizeof(char *) * strlen(line));
+
 	strcpy(line_copy, line);
 	token = strtok(line_copy, delim);
 
@@ -25,7 +26,9 @@ char **parse_line(char *line)
 		token = strtok(NULL, delim);
 	}
 	tokens_numbers++;
+
 	tokens = safe_malloc(sizeof(char *) * tokens_numbers);
+
 	token = strtok(line, delim);
 	for (i = 0; token != NULL; i++)
 	{
@@ -33,6 +36,7 @@ char **parse_line(char *line)
 		token = strtok(NULL, delim);
 	}
 	tokens[i] = NULL;
+
 	free(line_copy);
 	return (tokens);
 }
