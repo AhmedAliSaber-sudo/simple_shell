@@ -10,7 +10,9 @@
 #include <sys/wait.h>
 #include <sys/stat.h>
 
-/*** Functions Declarations ***/
+ /* extern char **environment; */
+
+/*** Functions prototypes ***/
 void print_prompt(void);
 char *get_line();
 char **parse_line(char *line);
@@ -19,6 +21,7 @@ void free_double_ptr(char **arr, size_t size);
 void *safe_malloc(size_t size);
 void print_string_array(char **arr);
 void execute_cmd(char **argv);
+char *find_command(const char *command);
 void run(int argc, char **argv);
 void interactive(void);
 void non_interactive(void);
