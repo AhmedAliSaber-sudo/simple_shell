@@ -3,7 +3,6 @@
 /**
 * execute_cmd - executes commands.
 * @argv: array of arguments.
-* @env: environment.
 */
 
 void execute_cmd(char **argv)
