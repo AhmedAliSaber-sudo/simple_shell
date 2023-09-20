@@ -17,7 +17,7 @@ void execute_cmd(char **argv)
 	}
 	if (!child)
 	{
-		if (execve(argv[0], argv, NULL))
+		if (execvp(argv[0], argv))
 		{
 			perror("./hsh");
 			exit(EXIT_FAILURE);
