@@ -1,8 +1,8 @@
 #include "shell.h"
 
 /**
- *print_string_array - array of string
- *@arr : pointer to array
+ *print_string_array - prints an array of string.
+ *@arr : pointer to array.
  */
 
 void print_string_array(char **arr)
@@ -12,5 +12,4 @@ void print_string_array(char **arr)
 		printf("%s\n", *arr);
 		arr++;
 	}
-
 }
