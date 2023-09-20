@@ -21,6 +21,9 @@ char **parse_line(char *line)
 	token = strtok(line_copy, delim);
 
 	while (token)
+	{
+		tokens_numbers++;
+		token = strtok(NULL, delim);
 	}
 	tokens_numbers++;
 
