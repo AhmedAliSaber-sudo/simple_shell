@@ -24,5 +24,7 @@ void execute_cmd(char **argv);
 void interactive(void);
 void non_interactive(void);
 void run(int argc, char **argv);
+int set_env_var(char *variable, char *value);
+int unset_env_var(char *variable);
 
 #endif
