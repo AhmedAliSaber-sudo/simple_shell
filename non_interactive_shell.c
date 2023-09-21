@@ -16,7 +16,7 @@ void non_interactive(void)
 
 		if (strcmp(cmds[0], "exit") == 0)
 		{
-			exit_shell(cmds);
+			exit(EXIT_SUCCESS);
 			break;
 		}
 
