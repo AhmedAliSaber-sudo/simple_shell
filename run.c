@@ -8,8 +8,7 @@
 
 void run(int argc, char **argv)
 {
-	(void) argc;
-	(void) argv;
+	(void) argc, (void) argv;
 
 	if (isatty(STDIN_FILENO) == 1)
 	{
@@ -19,4 +18,5 @@ void run(int argc, char **argv)
 	{
 		non_interactive();
 	}
+
 }

@@ -25,6 +25,11 @@ void interactive(void)
 			free(cmds);
 			break;
 		}
+		if (strcmp(cmds[0], "exit") == 0)
+		{
+			exit_shell(cmds);
+			break;
+		}
 
 		execute_cmd(cmds);
 		write(1, "\n", 1);
@@ -32,4 +37,7 @@ void interactive(void)
 		free(line);
 		free_double_ptr(cmds, str_array_length(cmds));
 	}
+
+	free(line);
+	free_double_ptr(cmds, str_array_length(cmds));
 }
